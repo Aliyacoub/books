@@ -1,0 +1,63 @@
+@import "./_variables";
+@import "./mixins";
+section.books {
+    .title {
+        &:after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 2px;
+            background-color: $color-book-title;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h3 {
+            font-size: 36px;
+            color: $color-book-title;
+            line-height: 120px;
+            margin: 0px;
+        }
+    }
+    .title1 {
+        &:after {
+            position: absolute;
+            content: "";
+            width: 120px;
+            height: 2px;
+            background-color: $color-book-title;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h5 {
+            font-size: 25px !important;
+            color: $color-book-title;
+            line-height: 120px;
+            margin: 0px;
+        }
+    }
+    
+}
+
+header {
+    .header-text {
+        h3 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            line-height: 46px;
+            color: $color-header-text;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+            color: $color-header-text;
+            line-height: 30px;
+            padding: 30px 25% 60px;
+        }
+    }
+}
+
+footer ul li {
+    a {
+        @include color-icon($color-icon, $color-footer-icon);
+    }
+}

@@ -1,0 +1,19 @@
+@import "./_variables";
+@mixin color-icon($color, $color-lighten) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color;
+    line-height: 40px;
+    text-align: center;
+    color: #bbb9b9;
+    display: block;
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:hover,
+    &:active:focus {
+        background-color: $color-lighten;
+        color: #777575;
+    }
+}

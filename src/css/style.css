@@ -1,0 +1,206 @@
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    direction: rtl;
+    font-family: ar-font;
+    overflow-x: hidden;
+}
+
+
+
+/*
+start header
+*/
+
+header.header .overlay {
+    background-color: #47090999;
+}
+
+header.header nav.navbar img {
+    width: 30%;
+    float: right;
+}
+
+header .header-text {
+    text-align: right;
+}
+
+header .navbar {
+    margin-bottom: 30px;
+}
+
+/*
+end header
+*/
+
+/*
+start section books
+*/
+
+section.books {
+    background-color: #fff;
+    padding: 25px 0;
+    margin-bottom: 100px;
+}
+
+section.books .images {
+    margin-top: 70px;
+}
+
+section.books .images img {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+/*
+end section feature
+*/
+
+/*
+start section contact
+*/
+
+section.contact {
+    padding: 60px 0 40px;
+    background-color: #131313;
+    text-align: right;
+}
+
+section.contact .contact-us .title h4 {
+    font-size: 18px;
+    color: #758594;
+    line-height: 50px;
+}
+
+section.contact ul {
+    padding: 0;
+    margin: 0;
+}
+
+section.contact ul.contact-us li {
+    position: relative;
+    font-size: 18px;
+    color: #676767;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+section.contact ul.contact-us li:last-of-type {
+    margin-bottom: 0;
+}
+
+section.contact ul.contact-us li i {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #282828;
+    text-align: center;
+    line-height: 35px;
+    color: #acacac;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+
+/*
+end section contact
+*/
+/*
+start footer
+*/
+footer {
+    line-height: 80px;
+    background-color: #1d1d1d;
+    text-align: right;
+}
+
+
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+
+
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: left;
+}
+/*
+end footer
+*/
+@media (max-width: 1199px) {
+    header .header-text h3 {
+        font-size: 40px;
+    }
+    header .header-text p {
+        padding: 30px 23% 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    header .header-text h3 {
+        font-size: 50px;
+    }
+    section.contact ul {
+        margin: 0px 145px;
+        white-space: nowrap;
+    }
+    section.contact #contact {
+        margin: 0px 145px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+    header .header-text h3 {
+        font-size: 50px;
+    }
+    header .header-text p {
+        padding: 30px 3% 60px;
+    }
+    section.contact {
+        padding: 60px 0 40px;
+    }
+    section.contact ul {
+        margin: 0;
+    }
+    section.contact #contact {
+        margin: 0px;
+    }
+    section.books .title1 h5 {
+        margin-top: 15px;
+    }
+    section.books #book1 {
+        margin-top: 95px;
+    }
+    section.books .images img {
+        margin-left: 20px;
+    }
+    section.books {
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.contact {
+        padding: 60px 20px 40px;
+    }
+    section.contact .map iframe {
+        margin: 0px -11px 0 0px;
+        width: 350px;
+    }
+}
