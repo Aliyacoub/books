@@ -22,10 +22,11 @@ body {
 /*
 start header
 */
-header.header  a.navbar-brand{
-  
+
+header.header a.navbar-brand {
     width: 20%;
 }
+
 header.header .overlay {
     background-color: #47090999;
 }
@@ -144,7 +145,6 @@ footer ul li {
 footer .copyright {
     font-size: 15px;
     color: #919191;
-    
 }
 
 /*
@@ -266,8 +266,8 @@ end book2 page
         font-size: 17px;
     }
 }
-@media (min-width: 991px) and (max-width: 1199px){
 
+@media (min-width: 991px) and (max-width: 1199px) {
     header.header img {
         max-width: 140%;
         min-height: 100%;
@@ -275,6 +275,7 @@ end book2 page
         margin-right: -80px;
     }
 }
+
 @media (max-width: 1199px) {
     header .header-text h3 {
         font-size: 40px;
@@ -372,8 +373,12 @@ end book2 page
         font-size: 10px;
         margin-bottom: 25px;
     }
-   
-   
+    a.btn-icon-book1, a.btn-icon-book2 {
+        padding: 5px 10px 4px;
+        color: #fff;
+        margin-left: 50px;
+        font-size: 12px;
+    }
     header.header img {
         max-width: 90%;
         margin-right: 25px;
@@ -386,10 +391,12 @@ end book2 page
     }
     ol.custom-breadcrumb-book2 {
         padding: 25px 20px;
-      
     }
-   
+    ol.custom-breadcrumb-book1 {
+        padding: 25px 20px;
+    }
 }
+
 @media (max-width: 471px) {
     section.Purchase_cart .title2 h3 {
         border-top: 1px solid #777;
