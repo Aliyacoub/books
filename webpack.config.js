@@ -17,7 +17,7 @@ new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     mode: 'development',
     devServer: {
       contentBase:  path.join(__dirname, '/dist'),
-      port:1239,
+      port:1229,
       writeToDisk: true,
       open:true,
     },
@@ -100,6 +100,14 @@ new MiniCssExtractPlugin({ filename: 'css/style.css' }),
       new HtmlWebpackPlugin({
         filename: 'index.html',
         template: './src/index.html',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'book1.html',
+        template: './src/book1.html',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'book2.html',
+        template: './src/book2.html',
       }),
       new webpack.ProvidePlugin({
         $: "jquery",

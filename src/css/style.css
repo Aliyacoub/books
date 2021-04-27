@@ -4,16 +4,20 @@
 }
 
 html {
+    position: relative;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    position: relative;
     direction: rtl;
     font-family: ar-font;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
-
-
 
 /*
 start header
@@ -26,6 +30,8 @@ header.header .overlay {
 header.header nav.navbar img {
     width: 30%;
     float: right;
+    padding: 0;
+    margin: 0;
 }
 
 header .header-text {
@@ -112,16 +118,16 @@ section.contact ul.contact-us li i {
 /*
 end section contact
 */
+
 /*
 start footer
 */
+
 footer {
     line-height: 80px;
     background-color: #1d1d1d;
     text-align: right;
 }
-
-
 
 footer ul {
     padding: 0;
@@ -132,22 +138,143 @@ footer ul li {
     margin-left: 10px;
 }
 
-
-
-footer .copyright p {
+footer .copyright {
     font-size: 15px;
     color: #919191;
     text-align: left;
 }
+
 /*
 end footer
 */
+
+/*
+start book1 page
+*/
+
+header.header .overlay1 {
+    background-color: rgba(140, 60, 31, .8);
+}
+
+header.header img {
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: -30px;
+}
+
+header.header .header-text p.summary {
+    padding: 30px 0 60px;
+}
+
+header.header .header-text.h4 h4 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: #bbb9b9 !important;
+    font-weight: bold;
+}
+
+ol.custom-breadcrumb-book1 {
+    padding: 25px 0;
+    background-color: transparent !important;
+}
+
+.custom-breadcrumb-book1 a {
+    color: #914225;
+    text-decoration: none !important;
+}
+
+.custom-breadcrumb-book1 a:hover {
+    color: rgba(140, 60, 31, .6);
+}
+
+.custom-breadcrumb-book1>li+li::before {
+    content: ">";
+    color: #914225;
+    padding: 0 5px;
+}
+
+.custom-breadcrumb-book1 .active {
+    color: #bfbfbf;
+}
+
+section.book1 {
+    margin-bottom: 60px;
+}
+
+section.Purchase_cart img {
+    width: 50% !important;
+    margin-top: 80px;
+}
+
+.custom-btn-with-icon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+}
+
+/*
+end book1 page
+*/
+
+/*
+start book2 page
+*/
+
+header.header .overlay2 {
+    background-color: rgba(45, 163, 226, .2);
+}
+
+ol.custom-breadcrumb-book2 {
+    padding: 25px 0;
+    background-color: transparent;
+}
+
+.custom-breadcrumb-book2 a {
+    color: #2DA3E2;
+    text-decoration: none !important;
+}
+
+.custom-breadcrumb-book2 a:hover {
+    color: rgba(45, 163, 226, .4);
+}
+
+.custom-breadcrumb-book2>li+li::before {
+    content: ">";
+    color: #2DA3E2;
+    padding: 0 5px;
+}
+
+.custom-breadcrumb-book2 .active {
+    color: #bfbfbf;
+}
+
+/*
+end book2 page
+*/
+
+@media (min-width: 1199px) {
+    header.header .header-text.h4 h4 {
+        font-size: 33px;
+    }
+    header.header .header-text.h4 p {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 1199px) {
     header .header-text h3 {
         font-size: 40px;
     }
     header .header-text p {
         padding: 30px 23% 60px;
+    }
+    header.header .header-text.h4 h4 {
+        font-size: 33px;
+    }
+    header.header .header-text.h4 p {
+        font-size: 17px;
     }
 }
 
@@ -162,6 +289,15 @@ end footer
     section.contact #contact {
         margin: 0px 145px;
         white-space: nowrap;
+    }
+    nav.navbar {
+        flex-wrap: nowrap !important;
+    }
+    header.header .header-text.h4 h4, header.header .header-text.h4 p {
+        margin-right: 0;
+    }
+    section.Purchase_cart img {
+        width: 100% !important;
     }
 }
 
@@ -188,10 +324,16 @@ end footer
         margin-top: 95px;
     }
     section.books .images img {
-        margin-left: 20px;
+        margin-right: 20px;
     }
     section.books {
         margin-bottom: 200px;
+    }
+    header.header img {
+        margin-bottom: 30px;
+    }
+    section.book1 {
+        margin-bottom: 30px;
     }
 }
 
@@ -202,5 +344,15 @@ end footer
     section.contact .map iframe {
         margin: 0px -11px 0 0px;
         width: 350px;
+    }
+    a.btn-icon {
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+    a.btn-icon-book1, a.btn-icon-book2 {
+        margin-bottom: 25px;
+    }
+    header.header nav.navbar img {
+        width: 40%;
     }
 }
