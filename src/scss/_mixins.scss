@@ -17,7 +17,7 @@
         color: #777575;
     }
 }
-@mixin custom-btn-book1($color, $color-lighten) {
+@mixin custom-btn-book($color, $color-lighten) {
     color: #fff;
     background-color: $color;
     border-color: $color;
@@ -31,17 +31,4 @@
         background-color: $color-lighten;
     }
 }
-@mixin custom-btn-book2($color, $color-lighten) {
-    color: #fff;
-    background-color: $color;
-    border-color: $color;
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus,
-    &:active:hover {
-        color: #000;
-        border-color: $color-lighten;
-        background-color: $color-lighten;
-    }
-}
+

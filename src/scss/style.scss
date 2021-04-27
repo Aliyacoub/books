@@ -17,6 +17,7 @@ section.books {
             color: $color-book-title;
             line-height: 120px;
             margin: 0px;
+            
         }
     }
     .title2 {
@@ -34,6 +35,7 @@ section.books {
             color: $color-book-title;
             line-height: 120px;
             margin: 0px;
+            
         }
     }
     .title1 {
@@ -51,6 +53,7 @@ section.books {
             color: $color-book-title;
             line-height: 120px;
             margin: 0px;
+         
         }
     }
 }
@@ -110,7 +113,7 @@ a.btn-icon-book1 {
     border-radius: 2px;
     margin-left: 50px;
     font-size: 20px;
-    margin-bottom: 65px;
+   
 }
 a.btn-icon-book2 {
     padding: 5px 10px 4px;
@@ -120,12 +123,12 @@ a.btn-icon-book2 {
     border-radius: 2px;
     margin-left: 50px;
     font-size: 20px;
-    margin-bottom: 65px;
+    
 }
 
 .custom-btn-book1 {
-    @include custom-btn-book1($custom-btn-book1-color, $custom-btn-book1-color-hover);
+    @include custom-btn-book($custom-btn-book1-color, $custom-btn-book1-color-hover);
 }
 .custom-btn-book2 {
-    @include custom-btn-book2($custom-btn-book2-color, $custom-btn-book2-color-hover);
+    @include custom-btn-book($custom-btn-book2-color, $custom-btn-book2-color-hover);
 }

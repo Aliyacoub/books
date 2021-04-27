@@ -22,13 +22,16 @@ body {
 /*
 start header
 */
-
+header.header  a.navbar-brand{
+  
+    width: 20%;
+}
 header.header .overlay {
     background-color: #47090999;
 }
 
 header.header nav.navbar img {
-    width: 30%;
+    width: 100%;
     float: right;
     padding: 0;
     margin: 0;
@@ -141,7 +144,7 @@ footer ul li {
 footer .copyright {
     font-size: 15px;
     color: #919191;
-    text-align: left;
+    
 }
 
 /*
@@ -157,9 +160,10 @@ header.header .overlay1 {
 }
 
 header.header img {
-    max-width: 100%;
+    max-width: 120%;
     min-height: 100%;
     margin-top: -30px;
+    margin-right: -50px;
 }
 
 header.header .header-text p.summary {
@@ -262,7 +266,15 @@ end book2 page
         font-size: 17px;
     }
 }
+@media (min-width: 991px) and (max-width: 1199px){
 
+    header.header img {
+        max-width: 140%;
+        min-height: 100%;
+        margin-top: -30px;
+        margin-right: -80px;
+    }
+}
 @media (max-width: 1199px) {
     header .header-text h3 {
         font-size: 40px;
@@ -335,6 +347,17 @@ end book2 page
     section.book1 {
         margin-bottom: 30px;
     }
+    footer {
+        line-height: 55px;
+    }
+    footer .copyright, footer .social-icon {
+        width: 100%;
+        text-align: center !important;
+    }
+    header.header img {
+        max-width: 100%;
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -349,10 +372,31 @@ end book2 page
         font-size: 10px;
         margin-bottom: 25px;
     }
-    a.btn-icon-book1, a.btn-icon-book2 {
-        margin-bottom: 25px;
+   
+   
+    header.header img {
+        max-width: 90%;
+        margin-right: 25px;
     }
-    header.header nav.navbar img {
-        width: 40%;
+    header.header .header-text.h4 h4 {
+        padding: 0px 30px 0;
+    }
+    header.header .header-text p.summary {
+        padding: 30px 30px 60px;
+    }
+    ol.custom-breadcrumb-book2 {
+        padding: 25px 20px;
+      
+    }
+   
+}
+@media (max-width: 471px) {
+    section.Purchase_cart .title2 h3 {
+        border-top: 1px solid #777;
+        font-size: 30px;
+        color: #555;
+        line-height: 60px;
+        padding: 25px 0 10px 0;
+        margin: 0;
     }
 }
