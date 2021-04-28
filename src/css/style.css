@@ -305,7 +305,7 @@ end User-Experience page
         font-size: 10px;
         margin-bottom: 25px;
     }
-    a.btn-icon-book1, a.btn-icon-book2 {
+    a.btn-icon-book1, a.btn-icon-book2,a.btn-icon-book3 {
         padding: 5px 10px 4px;
         color: #fff;
         margin-left: 50px;
@@ -321,12 +321,12 @@ end User-Experience page
     header.header .header-text p.summary {
         padding: 30px 30px 60px;
     }
-    ol.custom-breadcrumb-book2 {
+    ol.custom-breadcrumb-book2,
+    ol.custom-breadcrumb-book1,
+    ol.custom-breadcrumb-book3 {
         padding: 25px 20px;
     }
-    ol.custom-breadcrumb-book1 {
-        padding: 25px 20px;
-    }
+    
 }
 
 @media (max-width: 471px) {
