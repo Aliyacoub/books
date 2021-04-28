@@ -102,12 +102,16 @@ new MiniCssExtractPlugin({ filename: 'css/style.css' }),
         template: './src/index.html',
       }),
       new HtmlWebpackPlugin({
-        filename: 'book1.html',
-        template: './src/book1.html',
+        filename: 'freelancing.html',
+        template: './src/freelancing.html',
       }),
       new HtmlWebpackPlugin({
-        filename: 'book2.html',
-        template: './src/book2.html',
+        filename: 'User-Experience.html',
+        template: './src/User-Experience.html',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'PostgreSQL.html',
+        template: './src/PostgreSQL.html',
       }),
       new webpack.ProvidePlugin({
         $: "jquery",

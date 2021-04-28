@@ -27,10 +27,6 @@ header.header a.navbar-brand {
     width: 20%;
 }
 
-header.header .overlay {
-    background-color: #47090999;
-}
-
 header.header nav.navbar img {
     width: 100%;
     float: right;
@@ -65,9 +61,9 @@ section.books .images {
 }
 
 section.books .images img {
-    width: 90%;
-    height: 90%;
-    margin-top: 20px;
+    width: 95%;
+    height: 85%;
+    margin-top: 25px;
 }
 
 /*
@@ -152,12 +148,8 @@ end footer
 */
 
 /*
-start book1 page
+start User-Experience page
 */
-
-header.header .overlay1 {
-    background-color: rgba(140, 60, 31, .8);
-}
 
 header.header img {
     max-width: 120%;
@@ -178,30 +170,6 @@ header.header .header-text.h4 h4 {
     font-weight: bold;
 }
 
-ol.custom-breadcrumb-book1 {
-    padding: 25px 0;
-    background-color: transparent !important;
-}
-
-.custom-breadcrumb-book1 a {
-    color: #914225;
-    text-decoration: none !important;
-}
-
-.custom-breadcrumb-book1 a:hover {
-    color: rgba(140, 60, 31, .6);
-}
-
-.custom-breadcrumb-book1>li+li::before {
-    content: ">";
-    color: #914225;
-    padding: 0 5px;
-}
-
-.custom-breadcrumb-book1 .active {
-    color: #bfbfbf;
-}
-
 section.book1 {
     margin-bottom: 60px;
 }
@@ -219,43 +187,7 @@ section.Purchase_cart img {
 }
 
 /*
-end book1 page
-*/
-
-/*
-start book2 page
-*/
-
-header.header .overlay2 {
-    background-color: rgba(45, 163, 226, .2);
-}
-
-ol.custom-breadcrumb-book2 {
-    padding: 25px 0;
-    background-color: transparent;
-}
-
-.custom-breadcrumb-book2 a {
-    color: #2DA3E2;
-    text-decoration: none !important;
-}
-
-.custom-breadcrumb-book2 a:hover {
-    color: rgba(45, 163, 226, .4);
-}
-
-.custom-breadcrumb-book2>li+li::before {
-    content: ">";
-    color: #2DA3E2;
-    padding: 0 5px;
-}
-
-.custom-breadcrumb-book2 .active {
-    color: #bfbfbf;
-}
-
-/*
-end book2 page
+end User-Experience page
 */
 
 @media (min-width: 1199px) {
